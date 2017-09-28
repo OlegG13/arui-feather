@@ -63,6 +63,17 @@ module.exports = {
         },
         plugins: [
             new webpack.NormalModuleReplacementPlugin(/font_roboto\.css$/, 'node-noop')
-        ]
+        ],
+        module: {
+            rules: [
+                {
+                    test: /\.(svg)$/i,
+                    loader: 'file-loader',
+                    options: Object.assign({ mimetype: 'image/svg+xml' }, {
+                        name: '[hash].[ext]'
+                    })
+                }
+            ]
+        }
     })
 };

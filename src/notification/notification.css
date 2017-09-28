@@ -66,7 +66,7 @@
     }
 
     &__icon,
-    &__close {
+    &__closer {
         position: absolute;
     }
 
@@ -76,9 +76,9 @@
         left: 18px;
     }
 
-    &__close {
-        top: 10px;
-        right: 10px;
+    &__closer {
+        top: 0;
+        right: 0;
         cursor: pointer;
         transition: opacity 200ms;
         opacity: var(--opacity-minor);

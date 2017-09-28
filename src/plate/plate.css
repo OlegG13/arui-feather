@@ -20,12 +20,12 @@
         display: none;
     }
 
-    &_has-clear {
+    &_has-closer {
         padding-right: 34px;
     }
 
     /* FIXME: maybe remove cascade? */
-    &__clear > .icon {
+    &__closer > .icon {
         position: absolute;
         top: 16px;
         right: 16px;

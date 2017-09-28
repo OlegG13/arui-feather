@@ -4,6 +4,7 @@
 
 import '../../calendar/fantasy';
 import '../../icon';
+import '../../icon-button/fantasy';
 import '../../input/fantasy';
 import '../../mq';
 import '../../popup/fantasy';

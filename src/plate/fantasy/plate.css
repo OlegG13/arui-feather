@@ -9,7 +9,6 @@
     position: relative;
     margin-right: 7px;
     margin-bottom: 7px;
-    padding: var(--gap-s);
     border-radius: var(--border-radius-control);
     box-shadow: var(--shadow);
     background-color: #fff;
@@ -18,15 +17,19 @@
         display: none;
     }
 
-    &_has-closer {
-        padding-right: 34px;
+    &__content {
+        margin: var(--gap-s);
+    }
+
+    &_has-closer &__content {
+        padding-right: calc(var(--gap-s) * 2);
     }
 
     &__closer {
         opacity: var(--opacity-minor);
         position: absolute;
-        top: var(--gap-s);
-        right: var(--gap-s);
+        top: 0;
+        right: 0;
         cursor: pointer;
         transition: opacity .1s ease-out;
 
